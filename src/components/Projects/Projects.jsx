@@ -83,7 +83,7 @@ export const Project = () => {
         keyboard={true}
         loop={true}
         loopPreventsSliding={true}
-        loopedSlides={1}
+        loopedslides={1}
       >
         <SwiperSlide>
           <Image

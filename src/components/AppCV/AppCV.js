@@ -5,18 +5,7 @@ import "aos/dist/aos.css";
 import Link from "next/link";
 import { BiCameraMovie } from "react-icons/bi";
 
-import {
-  ImgWrap,
-  ItemWrap,
-  ImgForTeam,
-  ImgForTeamColor,
-  JobItem,
-  TitleItem,
-  SocialsListLink,
-  SocialsListItem,
-  SocialsList,
-  ButtonMovie,
-} from "./AppCV.styled";
+import "./appCV.css";
 
 import vlad from "@/images/person_photo/vlad_blackAndWhite.webp";
 import vladColor from "@/images/person_photo/vlad_warm_color.webp";
@@ -26,6 +15,7 @@ import telegram from "@/images/svg/telegram.svg";
 import envelope from "@/images/svg/envelope.svg";
 
 import { Project } from "@/components/Projects/Projects";
+import Image from "next/image";
 // import { openModalWindow } from "hooks/ModalWindow";
 // import { ModalWindow } from "../ModalWindow/ModalWindow";
 // import { useState } from "react";
@@ -40,33 +30,37 @@ export default function AppCV() {
   };
 
   return (
-    // <html lang="en">
-    //   <body className="bodycontainer">
     <div className="maincontainer">
       <aside className="sidebar">
         <div className="linkOfCV">
-          <Link href="/Rezume_ukr_Vladyslav Popov.doc" target="_blank" download>
-            CV UKR
+          <Link
+            href="/src/images/Vladyslav_Popov_-_Full_Stack_Web_Developer,_Frontend_Web_Developer.pdf"
+            target="_blank"
+            download
+          >
+            Download CV
           </Link>
-          <Link href="/Resume_eng_Vladyslav_Popov.doc" target="_blank" download>
-            CV ENG
-          </Link>
-          <ButtonMovie type="button" onClick={(e) => hendleOpenModalWindow(e)}>
+          <button
+            className="buttonMovie"
+            type="button"
+            onClick={(e) => hendleOpenModalWindow(e)}
+          >
             <BiCameraMovie />
-          </ButtonMovie>
+          </button>
         </div>
         <div className="photo">
-          <ItemWrap data-aos="flip-up" data-aos-delay="150">
-            <ImgWrap>
-              <ImgForTeam src={vlad} alt="vlad" />
-              <ImgForTeamColor src={vladColor} alt="vlad" />
-            </ImgWrap>
-            <TitleItem>Vlad Popov</TitleItem>
-            <JobItem>Full-Stack Developer</JobItem>
-            <JobItem>Project Manager</JobItem>
-            <SocialsList>
-              <SocialsListItem>
-                <SocialsListLink
+          <div className="itemWrap" data-aos="flip-up" data-aos-delay="150">
+            <div className="imgWrap">
+              <Image className="imgForTeam" src={vlad} alt="vlad" />
+              <Image className="imgForTeamColor" src={vladColor} alt="vlad" />
+            </div>
+            <h4 className="titleItem">Vlad Popov</h4>
+            <h5 className="jobItem">Full-Stack Developer</h5>
+            <h5 className="jobItem">Project Manager</h5>
+            <ul className="socialsList">
+              <li className="socialsListItem">
+                <a
+                  className="socialsListLink"
                   href="https://github.com/StudentVlad5"
                   target="_blank"
                   rel="noreferrer"
@@ -74,10 +68,11 @@ export default function AppCV() {
                   <svg width="20" height="20">
                     <use href={github}></use>
                   </svg>
-                </SocialsListLink>
-              </SocialsListItem>
-              <SocialsListItem>
-                <SocialsListLink
+                </a>
+              </li>
+              <li className="socialsListItem">
+                <a
+                  className="socialsListLink"
                   href="https://www.linkedin.com/in/vladyslav-popov-a491232a/"
                   target="_blank"
                   rel="noreferrer"
@@ -85,10 +80,11 @@ export default function AppCV() {
                   <svg width="20" height="20">
                     <use href={linkedin}></use>
                   </svg>
-                </SocialsListLink>
-              </SocialsListItem>
-              <SocialsListItem>
-                <SocialsListLink
+                </a>
+              </li>
+              <li className="socialsListItem">
+                <a
+                  className="socialsListLink"
                   href="https://t.me/Vinforam"
                   target="_blank"
                   rel="noreferrer"
@@ -96,17 +92,17 @@ export default function AppCV() {
                   <svg width="20" height="20">
                     <use href={telegram}></use>
                   </svg>
-                </SocialsListLink>
-              </SocialsListItem>
-              <SocialsListItem>
-                <SocialsListLink href="mailto:vlad_np@ukr.net">
+                </a>
+              </li>
+              <li className="socialsListItem">
+                <a className="socialsListLink" href="mailto:vlad_np@ukr.net">
                   <svg width="20" height="20">
                     <use href={envelope}></use>
                   </svg>
-                </SocialsListLink>
-              </SocialsListItem>
-            </SocialsList>
-          </ItemWrap>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
         {/* <!--tech skills--> */}
         <div className="techskills section">
