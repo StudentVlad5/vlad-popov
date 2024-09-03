@@ -1,9 +1,5 @@
-"use client";
 import { SliderOfSertificate } from "@/components/SliderOfSertificate/SladerOfSertificate";
-import Aos from "aos";
-import "aos/dist/aos.css";
 import Link from "next/link";
-import { BiCameraMovie } from "react-icons/bi";
 
 import "./appCV.css";
 
@@ -16,18 +12,47 @@ import envelope from "@/images/svg/envelope.svg";
 
 import { Project } from "@/components/Projects/Projects";
 import Image from "next/image";
-// import { openModalWindow } from "hooks/ModalWindow";
-// import { ModalWindow } from "../ModalWindow/ModalWindow";
-// import { useState } from "react";
+import MovieButton from "../MovieButton/MovieButton";
 
 export default function AppCV() {
-  Aos.init();
-  // const [isPlaying, setPlaying] = useState(false);
-
-  const hendleOpenModalWindow = (e) => {
-    // setPlaying(true);
-    // openModalWindow(e);
+  const techSkills = [
+    "Figma",
+    "Next Js",
+    "React",
+    "Node",
+    "JavaScript",
+    "Express",
+    "HTML",
+    "CSS",
+    "Parcel",
+    "GitHub",
+    "MongoDB",
+    "Firebase",
+  ];
+  const softSkills = [
+    "Communication Skills",
+    "Teamwork",
+    "Hard Working",
+    "Problem Solving",
+    "Project Management Skills",
+    "Agile Software Development",
+    "Business Operations",
+  ];
+  const details = [
+    "Visa sponsorship is not required",
+    "Residents permit",
+    "Zaandam, Netherlands",
+  ];
+  const moreDetails = {
+    Nationality: "Ukrainian",
+    License: ["B", "C"],
+    Languages: {
+      Ukraine: "native",
+      Russian: "native",
+      English: "intermediate",
+    },
   };
+  const moreDetailsKeys = Object.keys(moreDetails);
 
   return (
     <div className="maincontainer">
@@ -40,23 +65,29 @@ export default function AppCV() {
           >
             Download CV
           </Link>
-          <button
-            className="buttonMovie"
-            type="button"
-            onClick={(e) => hendleOpenModalWindow(e)}
-          >
-            <BiCameraMovie />
-          </button>
+          <MovieButton />
         </div>
         <div className="photo">
           <div className="itemWrap" data-aos="flip-up" data-aos-delay="150">
             <div className="imgWrap">
-              <Image className="imgForTeam" src={vlad} alt="vlad" />
-              <Image className="imgForTeamColor" src={vladColor} alt="vlad" />
+              <Image
+                className="imgForTeam"
+                src={vlad}
+                alt="vlad"
+                width={200}
+                height={250}
+              />
+              <Image
+                className="imgForTeamColor"
+                src={vladColor}
+                alt="vlad"
+                width={200}
+                height={250}
+              />
             </div>
             <h4 className="titleItem">Vlad Popov</h4>
-            <h5 className="jobItem">Full-Stack Developer</h5>
-            <h5 className="jobItem">Project Manager</h5>
+            <h5 className="jobItem">Full-Stack Web Developer</h5>
+            <h5 className="jobItem">Frontend Web Developer</h5>
             <ul className="socialsList">
               <li className="socialsListItem">
                 <a
@@ -65,9 +96,7 @@ export default function AppCV() {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <svg width="20" height="20">
-                    <use href={github}></use>
-                  </svg>
+                  <Image width="20" height="20" src={github.src} alt="github" />
                 </a>
               </li>
               <li className="socialsListItem">
@@ -77,9 +106,12 @@ export default function AppCV() {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <svg width="20" height="20">
-                    <use href={linkedin}></use>
-                  </svg>
+                  <Image
+                    width="20"
+                    height="20"
+                    src={linkedin.src}
+                    alt="linkedin"
+                  />
                 </a>
               </li>
               <li className="socialsListItem">
@@ -89,78 +121,63 @@ export default function AppCV() {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <svg width="20" height="20">
-                    <use href={telegram}></use>
-                  </svg>
+                  <Image
+                    width="20"
+                    height="20"
+                    src={telegram.src}
+                    alt="telegram"
+                  />
                 </a>
               </li>
               <li className="socialsListItem">
                 <a className="socialsListLink" href="mailto:vlad_np@ukr.net">
-                  <svg width="20" height="20">
-                    <use href={envelope}></use>
-                  </svg>
+                  <Image
+                    width="20"
+                    height="20"
+                    src={envelope.src}
+                    alt="envelope"
+                  />
                 </a>
               </li>
             </ul>
           </div>
         </div>
+        {/* <!--details--> */}
+        <div className="techskills section">
+          <h3 className="sidebar_title">Details</h3>
+          <ul className="techskillslist">
+            {details &&
+              details.map((item) => (
+                <li className="skills-item" key={item}>
+                  <span className="skills-item-text">{item}</span>
+                </li>
+              ))}
+          </ul>
+        </div>
         {/* <!--tech skills--> */}
         <div className="techskills section">
           <h3 className="sidebar_title">Tech Skills</h3>
           <ul className="techskillslist">
-            <li className="skills-item">
-              <span className="skills-item-text">HTML5</span>
-            </li>
-            <li className="skills-item">
-              <span className="skills-item-text">CSS3</span>
-            </li>
-            <li className="skills-item">
-              <span className="skills-item-text">GIT</span>
-            </li>
-            <li className="skills-item">
-              <span className="skills-item-text">JAVASCRIPT</span>
-            </li>
-            <li className="skills-item">
-              <span className="skills-item-text">REACT</span>
-            </li>
-            <li className="skills-item">
-              <span className="skills-item-text">NODE JS</span>
-            </li>
-            <li className="skills-item">
-              <span className="skills-item-text">REACT-NATIVE</span>
-            </li>
-            <li className="skills-item">
-              <span className="skills-item-text">TYPESCRIPT</span>
-            </li>
+            {techSkills &&
+              techSkills.map((item) => (
+                <li className="skills-item" key={item}>
+                  <span className="skills-item-text">{item}</span>
+                </li>
+              ))}
           </ul>
         </div>
         {/* <!--soft skills--> */}
         <div className="softskills section">
           <h3 className="sidebar_title">Soft Skills</h3>
           <ul className="techskillslist">
-            <li className="skills-item">
-              <span className="skills-item-text">Scrum</span>
-            </li>
-            <li className="skills-item">
-              <span className="skills-item-text">Agile</span>
-            </li>
-            <li className="skills-item">
-              <span className="skills-item-text">Communication</span>
-            </li>
-            <li className="skills-item">
-              <span className="skills-item-text">Teamwork</span>
-            </li>
-            <li className="skills-item">
-              <span className="skills-item-text">
-                Ability to concede deadlines
-              </span>
-            </li>
-            <li className="skills-item">
-              <span className="skills-item-text">Time management</span>
-            </li>
-            <li className="skills-item">
-              <span className="skills-item-text">Stress management</span>
-            </li>
+            {softSkills &&
+              softSkills.map((item) => {
+                return (
+                  <li className="skills-item" key={item}>
+                    <span className="skills-item-text">{item}</span>
+                  </li>
+                );
+              })}
           </ul>
         </div>
         {/* <!--sertificates--> */}
@@ -289,9 +306,6 @@ export default function AppCV() {
           </div>
         </div>
       </div>
-      {/* <ModalWindow isPlaying={isPlaying} setPlaying={setPlaying} /> */}
     </div>
-    //   </body>
-    // </html>
   );
 }

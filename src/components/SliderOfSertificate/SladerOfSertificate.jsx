@@ -1,8 +1,7 @@
+"use client";
 import ImageGallery from "react-image-gallery";
 import "react-image-gallery/styles/css/image-gallery.css";
-
 import sertificate_1 from "@/images/sertificates/20286_Introduction_to_programming.webp";
-console.log("sertificate_1", sertificate_1);
 import sertificate_2 from "@/images/sertificates/GoIt_English_Sertificate.webp";
 import sertificate_3 from "@/images/sertificates/GoIt_Sertificate.webp";
 import sertificate_4 from "@/images/sertificates/FullStack_addition.webp";
@@ -15,7 +14,8 @@ import sertificate_10 from "@/images/sertificates/rozetka_mba.webp";
 import sertificate_11 from "@/images/sertificates/stepik-certificate-3432-aa7cac9.webp";
 import sertificate_12 from "@/images/sertificates/stepik-certificate-38218-4294eb1.webp";
 import sertificate_13 from "@/images/sertificates/stepik-certificate-4350-a9dce0a.webp";
-import sertificate_14 from "@/images/sertificates/stepik-certificate-4350-a9dce0a.webp";
+import sertificate_14 from "@/images/sertificates/sertificate_next.webp";
+import "./sladerOfSertificate.css";
 
 export const SliderOfSertificate = () => {
   const images = [
@@ -87,7 +87,7 @@ export const SliderOfSertificate = () => {
     {
       original: sertificate_14.src,
       thumbnail: sertificate_14.src,
-      originalAlt: "stepik certificate 4350 a9dce0a",
+      originalAlt: "next certificate 61488832",
     },
   ];
   return (
