@@ -63,7 +63,7 @@ export default function AppCV() {
       <aside className="sidebar">
         <div className="linkOfCV">
           <Link
-            href="/src/images/Vladyslav_Popov_-_Full_Stack_Web_Developer,_Frontend_Web_Developer.pdf"
+            href="/Vladyslav_Popov_-_Full_Stack_Web_Developer,_Frontend_Web_Developer.pdf"
             target="_blank"
             download
           >
@@ -244,7 +244,27 @@ export default function AppCV() {
           <p className="about_me_description">
             I am a <b>highly motivated</b> individual with a deep passion for
             web development, and I believe my skills and experiences align well
-            with the needs of my new projects. Some months ago I relocated to the Netherlands from war at home. Since then, have permission for the work, found an apartment, and am now seeking a position where I can fully apply and develop my skills in the IT field. <br/>This challenging period has only strengthened my determination to succeed and contribute meaningfully in a professional setting. I bring hands-on experience from a range of projects, including startups and high-responsibility corporate initiatives. Throughout my career, I have successfully delivered projects of varying complexity, consistently meeting or exceeding expectations. My approach to development is user-centric, ensuring that web applications are not only functional but also intuitive and easy to navigate. Although my previous experience is rooted in Ukraine, I am fully prepared and eager to adapt to new challenges and environments. My technical expertise includes <b>JavaScript, HTML, CSS, React, Next.js, Node.js,and Express</b>. I am passionate about staying up-to-date with the latest advancements in programming and am committed to continuous learning and skill development. My enthusiasm for coding drives me to constantly improve, and I am confident that I can bring this dedication to my new role.
+            with the needs of my new projects. Some months ago I relocated to
+            the Netherlands from war at home. Since then, have permission for
+            the work, found an apartment, and am now seeking a position where I
+            can fully apply and develop my skills in the IT field. <br />
+            This challenging period has only strengthened my determination to
+            succeed and contribute meaningfully in a professional setting. I
+            bring hands-on experience from a range of projects, including
+            startups and high-responsibility corporate initiatives. Throughout
+            my career, I have successfully delivered projects of varying
+            complexity, consistently meeting or exceeding expectations. My
+            approach to development is user-centric, ensuring that web
+            applications are not only functional but also intuitive and easy to
+            navigate. Although my previous experience is rooted in Ukraine, I am
+            fully prepared and eager to adapt to new challenges and
+            environments. My technical expertise includes{" "}
+            <b>JavaScript, HTML, CSS, React, Next.js, Node.js,and Express</b>. I
+            am passionate about staying up-to-date with the latest advancements
+            in programming and am committed to continuous learning and skill
+            development. My enthusiasm for coding drives me to constantly
+            improve, and I am confident that I can bring this dedication to my
+            new role.
           </p>
           {/* <!--more information --> */}
           <div className="moreDetail">
