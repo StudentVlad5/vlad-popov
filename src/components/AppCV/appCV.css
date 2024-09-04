@@ -97,41 +97,42 @@
   justify-content: center;
   align-items: center;
   padding: 0;
+  gap: 40px;
 }
 
 .socialsListItem {
   cursor: pointer;
-  padding: 2px;
   list-style: none;
   transition: all 0.2s ease-in;
-  & > * {
-    fill: white;
-  }
-  &:not(:last-child) {
-    margin-right: 20px;
-  }
-  & > *:hover,
-  & > *:focus {
-    fill: orangered;
-  }
-
-  & > * {
-    fill: black;
-  }
 }
 .socialsListLink {
+  position: relative;
   cursor: pointer;
   padding: 2px;
   color: black;
   transition: all 0.2s ease-in;
 
-  & > *:hover,
-  & > *:focus {
-    fill: orangered;
+  & > *:hover .colorIcon,
+  & > *:focus .colorIcon {
+    opacity: 1;
   }
-
-  & svg {
-    fill: white;
+}
+.blackIcon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  @media screen and (min-width: 768px) {
+    opacity: 1;
+  }
+}
+.colorIcon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  @media screen and (min-width: 768px) {
+    opacity: 0;
   }
 }
 .buttonMovie {
@@ -150,11 +151,5 @@
   & > *:focus {
     fill: orangered;
     /* fill: ${(props) => props.theme.accentRed}; */
-  }
-
-  & svg {
-    fill: gray;
-    transition: all 0.2s ease-in;
-    animation: beat 1.2s infinite;
   }
 }

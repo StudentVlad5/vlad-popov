@@ -66,13 +66,13 @@ a {
 }
 @media only screen and (min-width: 768px) {
   .sidebar {
-    width: 100%;
+    width: 450px;
   }
 }
 
 .section {
   margin: auto;
-  min-width: 220px;
+  width: 220px;
 }
 @media only screen and (min-width: 768px) {
 }
@@ -110,7 +110,10 @@ a {
   margin-right: 10px;
 }
 .techskillslist {
+  display: flex;
+  flex-direction: column;
   padding: 0 0 0 17px;
+  gap: 12px;
 }
 .sliderOfSertification {
   display: block;
@@ -124,10 +127,13 @@ a {
 .skills-item-text {
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 24px;
   color: #fff;
   opacity: 0.75;
+  @media only screen and (min-width: 768px) {
+    font-size: 18px;
+  }
 }
 .photo {
   width: 100%;
@@ -205,7 +211,9 @@ a {
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
+  text-align: justify;
   color: #595959;
+  padding: 20px 0;
 }
 .moreDetail {
   display: flex;
@@ -226,13 +234,13 @@ a {
 }
 .projectPics {
   width: 100%;
-  height: calc(100vh - 50%);
+  height: fit-content;
   border-radius: 10px;
 }
 @media only screen and (min-width: 768px) {
   .projectPics {
     width: 100%;
-    height: calc(100vh - 300px);
+    /* height: calc(100vh - 300px); */
   }
 }
 /*my work expierences */
@@ -386,4 +394,13 @@ a {
 }
 .swiper.swiper-initialized.swiper-horizontal {
   overflow: hidden;
+  width: auto;
+  height: auto;
+  max-height: 400px;
+  @media only screen and (min-width: 768px) {
+    height: 800px;
+  }
+}
+.swiper-slide {
+  height: fit-content;
 }

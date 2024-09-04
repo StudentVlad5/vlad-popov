@@ -6,9 +6,13 @@ import "./appCV.css";
 import vlad from "@/images/person_photo/vlad_blackAndWhite.webp";
 import vladColor from "@/images/person_photo/vlad_warm_color.webp";
 import github from "@/images/svg/github.svg";
+import github_orange from "@/images/svg/orange_github_icon.svg";
 import linkedin from "@/images/svg/linkedin.svg";
+import linkedin_orange from "@/images/svg/orange_linkedin_icon.svg";
 import telegram from "@/images/svg/telegram.svg";
+import telegram_orange from "@/images/svg/orange_telegram_icon.svg";
 import envelope from "@/images/svg/envelope.svg";
+import envelope_orange from "@/images/svg/orange_envelope_icon.svg";
 
 import { Project } from "@/components/Projects/Projects";
 import Image from "next/image";
@@ -74,15 +78,15 @@ export default function AppCV() {
                 className="imgForTeam"
                 src={vlad}
                 alt="vlad"
-                width={200}
-                height={250}
+                width="auto"
+                height="auto"
               />
               <Image
                 className="imgForTeamColor"
                 src={vladColor}
                 alt="vlad"
-                width={200}
-                height={250}
+                width="auto"
+                height="auto"
               />
             </div>
             <h4 className="titleItem">Vlad Popov</h4>
@@ -96,7 +100,22 @@ export default function AppCV() {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <Image width="20" height="20" src={github.src} alt="github" />
+                  <div styles={{ position: "relative" }}>
+                    <Image
+                      width="20"
+                      height="20"
+                      src={github.src}
+                      alt="github"
+                      className="blackIcon"
+                    />
+                    <Image
+                      width="20"
+                      height="20"
+                      src={github_orange.src}
+                      alt="github"
+                      className="colorIcon"
+                    />
+                  </div>
                 </a>
               </li>
               <li className="socialsListItem">
@@ -106,12 +125,22 @@ export default function AppCV() {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <Image
-                    width="20"
-                    height="20"
-                    src={linkedin.src}
-                    alt="linkedin"
-                  />
+                  <div styles={{ position: "relative" }}>
+                    <Image
+                      width="20"
+                      height="20"
+                      src={linkedin.src}
+                      alt="linkedin"
+                      className="blackIcon"
+                    />
+                    <Image
+                      width="20"
+                      height="20"
+                      src={linkedin_orange.src}
+                      alt="linkedin"
+                      className="colorIcon"
+                    />
+                  </div>
                 </a>
               </li>
               <li className="socialsListItem">
@@ -121,22 +150,42 @@ export default function AppCV() {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <Image
-                    width="20"
-                    height="20"
-                    src={telegram.src}
-                    alt="telegram"
-                  />
+                  <div styles={{ position: "relative" }}>
+                    <Image
+                      width="20"
+                      height="20"
+                      src={telegram.src}
+                      alt="telegram"
+                      className="blackIcon"
+                    />
+                    <Image
+                      width="20"
+                      height="20"
+                      src={telegram_orange.src}
+                      alt="telegram"
+                      className="colorIcon"
+                    />
+                  </div>
                 </a>
               </li>
               <li className="socialsListItem">
                 <a className="socialsListLink" href="mailto:vlad_np@ukr.net">
-                  <Image
-                    width="20"
-                    height="20"
-                    src={envelope.src}
-                    alt="envelope"
-                  />
+                  <div styles={{ position: "relative" }}>
+                    <Image
+                      width="20"
+                      height="20"
+                      src={envelope.src}
+                      alt="envelope"
+                      className="blackIcon"
+                    />
+                    <Image
+                      width="20"
+                      height="20"
+                      src={envelope_orange.src}
+                      alt="envelope"
+                      className="colorIcon"
+                    />
+                  </div>
                 </a>
               </li>
             </ul>
@@ -189,15 +238,62 @@ export default function AppCV() {
       <div className="right_side">
         {/* <!--  about_me_section     --> */}
         <div className="aboutme">
-          <h2 className="myjob">Full-Stack-Developer</h2>
-          <h2 className="myjob">Project Manager</h2>
+          <h2 className="myjob">Full-Stack Web Developer</h2>
+          <h2 className="myjob">Frontend Web Developer</h2>
           <h1 className="myname">Vlad Popov</h1>
           <p className="about_me_description">
-            Project-owner, usiness analyst.Financial management. Organization of
-            ccounting and reporting, internal financial control. Development of
-            business plans, audit, analysis of results. Operational component of
-            the department, control of team schedule.
+            I am a <b>highly motivated</b> individual with a deep passion for
+            web development, and I believe my skills and experiences align well
+            with the needs of my new projects. Some months ago I relocated to the Netherlands from war at home. Since then, have permission for the work, found an apartment, and am now seeking a position where I can fully apply and develop my skills in the IT field. <br/>This challenging period has only strengthened my determination to succeed and contribute meaningfully in a professional setting. I bring hands-on experience from a range of projects, including startups and high-responsibility corporate initiatives. Throughout my career, I have successfully delivered projects of varying complexity, consistently meeting or exceeding expectations. My approach to development is user-centric, ensuring that web applications are not only functional but also intuitive and easy to navigate. Although my previous experience is rooted in Ukraine, I am fully prepared and eager to adapt to new challenges and environments. My technical expertise includes <b>JavaScript, HTML, CSS, React, Next.js, Node.js,and Express</b>. I am passionate about staying up-to-date with the latest advancements in programming and am committed to continuous learning and skill development. My enthusiasm for coding drives me to constantly improve, and I am confident that I can bring this dedication to my new role.
           </p>
+          {/* <!--more information --> */}
+          <div className="moreDetail">
+            {moreDetailsKeys &&
+              moreDetailsKeys.map((item) => {
+                if (typeof moreDetails[item] === "string") {
+                  return (
+                    <div key={item}>
+                      <h4 className="style_education">{item}</h4>
+                      <p className="style_period">
+                        <span className="black_color_style_education">
+                          {moreDetails[item]}
+                        </span>
+                      </p>
+                    </div>
+                  );
+                } else if (Array.isArray(moreDetails[item])) {
+                  return (
+                    <div key={item}>
+                      <h4 className="style_education">{item}</h4>
+                      <p className="style_period">
+                        {moreDetails[item].map((it) => (
+                          <span
+                            key={it}
+                            className="black_color_style_education"
+                          >
+                            {it + " "}
+                          </span>
+                        ))}
+                      </p>
+                    </div>
+                  );
+                } else {
+                  let keyItem = Object.keys(moreDetails[item]);
+                  return (
+                    <div key={item}>
+                      <h4 className="style_education">{item}</h4>
+                      {keyItem.map((it) => (
+                        <p className="style_period" key={it}>
+                          <span className="black_color_style_education">
+                            {it + ": " + moreDetails[item][it]}
+                          </span>
+                        </p>
+                      ))}
+                    </div>
+                  );
+                }
+              })}
+          </div>
           {/* <!--  my projects     --> */}
           <div className="my_project" style={{ position: "relative" }}>
             <h3 className="main-contact-title">Projects</h3>
@@ -209,70 +305,128 @@ export default function AppCV() {
             {/* <!--  company_1--> */}
             <div className="company1 job">
               <h4 className="style_job">
-                Front-End Developer{" "}
-                <span className="text_style_orange">Freelance</span>
+                Full-Stack Web Developer{" "}
+                <span className="text_style_orange">at Brand MAZE</span>
               </h4>
+              <p className="text_style_about">
+                {" "}
+                IT company for website design and development
+              </p>
               <p className="style_period">
-                January 2022 - up to now{" "}
+                2022 - up to now{" "}
                 <span className="black_color_style_period"> | </span> Ukraine
               </p>
+              <p className="text_style_blue">
+                <Link
+                  href="https://brand-maze.com/"
+                  alt="Brand Maze"
+                  target="_blank"
+                >
+                  https://brand-maze-agency.vercel.app/
+                </Link>
+              </p>
+
               <ul className="description-of-duties">
-                <li className="duty_item">Help in social projects</li>
-                <li className="duty_item">Improve the level of programming</li>
-                <li className="duty_item">Implementing own projects</li>
+                <li className="duty_item">
+                  Development of web applications with modern, responsive user
+                  interface, achieving satisfaction rating of 100%
+                </li>
+                <li className="duty_item">
+                  Collaboration with other developers to ensure code consistency
+                  and best practices. More than 60 completed projects (details
+                  at the Portfolio links)
+                </li>
               </ul>
             </div>
             {/* <!--  company_2--> */}
             <div className="company2 job">
               <h4 className="style_job">
-                Manager <span className="text_style_orange">RozetkaUa LTD</span>
+                Project manager{" "}
+                <span className="text_style_orange">at RozetkaUa LTD</span>
               </h4>
+              <p className="text_style_about"> online marketplace</p>
               <p className="style_period">
-                May 2016 - up to now{" "}
+                2018 - up to now{" "}
                 <span className="black_color_style_period"> | </span> Ukraine
               </p>
+              <p className="text_style_blue">
+                <Link
+                  href="https://rozetka.com.ua/ua/"
+                  alt="Rozetka"
+                  target="_blank"
+                >
+                  https://rozetka.com.ua/ua/
+                </Link>
+              </p>
               <ul className="description-of-duties">
-                <li className="duty_item">Development of a strategic plan</li>
-                <li className="duty_item">Projects of increase sales</li>
                 <li className="duty_item">
-                  Communication with project customers
+                  Agile methodology and tools usage to ensure successful product
+                  launch, leading to 25% increase in sales
                 </li>
-                <li className="duty_item">Analysis of results</li>
+                <li className="duty_item">
+                  Implementation of payment methods for sellers on the
+                  marketplace: payment by Visa & MasterCard, Apple & Google pay
+                  and loans
+                </li>
               </ul>
             </div>
             {/* <!--  company_3--> */}
             <div className="company3 job">
               <h4 className="style_job">
-                Manager{" "}
-                <span className="text_style_orange">UMS Polyester LTD</span>{" "}
+                Project manager{" "}
+                <span className="text_style_orange"> at ALFA LLC</span>{" "}
               </h4>
+              <p className="text_style_about">
+                {" "}
+                production of boats and polyester products
+              </p>
               <p className="style_period">
-                September 2015 - May 2016{" "}
+                2017 - 2018{" "}
                 <span className="black_color_style_period"> | </span> Ukraine
               </p>
               <ul className="description-of-duties">
-                <li className="duty_item">Searching for new partners</li>
                 <li className="duty_item">
-                  Organization of the operational process of ordering
+                  Team of sales representatives leading to exceed sales targets
+                  by 100%, resulting in increased profits for the company
                 </li>
-                <li className="duty_item">Coordination of cooperation</li>
+                <li className="duty_item">
+                  Establishment of a new sales channel that increased sales by
+                  50% within the first year of implementation
+                </li>
               </ul>
             </div>
             {/* <!--  company_4--> */}
             <div className="company4 job">
               <h4 className="style_job">
-                Manager <span className="text_style_orange">Foxtrot LTD</span>{" "}
+                Project Manager{" "}
+                <span className="text_style_orange">at Foxtrot LTD</span>{" "}
               </h4>
+              <p className="text_style_about">
+                {" "}
+                retail network of sales of electronics and household appliances
+              </p>
               <p className="style_period">
                 {" "}
-                april 2004 - september 2015{" "}
+                2004 - 2017{" "}
                 <span className="black_color_style_period"> | </span> Ukraine
               </p>
+              <p className="text_style_blue">
+                <Link
+                  href="https://www.foxtrot.com.ua/"
+                  alt="Foxtrot"
+                  target="_blank"
+                >
+                  https://www.foxtrot.com.ua/
+                </Link>
+              </p>
               <ul className="description-of-duties">
-                <li className="duty_item">Development of credit sales</li>
-                <li className="duty_item">Development of credit programs</li>
                 <li className="duty_item">
-                  Simplifying the process of buying on credit
+                  Implementation of a complex software project with a budget of
+                  $15 million/year, completing it on time and within budget
+                </li>
+                <li className="duty_item">
+                  Development and implementation of new tools to increase the
+                  company&s sales
                 </li>
               </ul>
             </div>
@@ -285,9 +439,13 @@ export default function AppCV() {
               <h4 className="style_education">
                 Institute of Business Management
               </h4>
-              <h5 className="style_specialty">Audit, economics, accounting</h5>
+              <h5 className="style_specialty">
+                {" "}
+                Master of Business Administration (MBA), Finance, Accounting and
+                Audit, Institute of Business Management, Ukraine
+              </h5>
               <p className="style_period">
-                September 1993 - June 1998{" "}
+                1993 - 1998{" "}
                 <span className="black_color_style_education"> | </span> Ukraine
               </p>
             </div>
@@ -299,7 +457,27 @@ export default function AppCV() {
                 Financial Managers
               </h5>
               <p className="style_period">
-                March 2011 - September 2012{" "}
+                2011 - 2012{" "}
+                <span className="black_color_style_education"> | </span> Ukraine
+              </p>
+            </div>
+            {/* <!--  education_3--> */}
+            <div className="education3 educate">
+              <h4 className="style_education">GoIT</h4>
+              <h5 className="style_specialty">
+                diploma FS_12607, Full Stack Developer
+              </h5>
+              <p className="style_period">
+                2022 - 2023{" "}
+                <span className="black_color_style_education"> | </span> Ukraine
+              </p>
+            </div>
+            {/* <!--  education_4--> */}
+            <div className="education4 educate">
+              <h4 className="style_education">Hillel</h4>
+              <h5 className="style_specialty">diploma 61488832, Next JS</h5>
+              <p className="style_period">
+                2024 - 2024{" "}
                 <span className="black_color_style_education"> | </span> Ukraine
               </p>
             </div>
