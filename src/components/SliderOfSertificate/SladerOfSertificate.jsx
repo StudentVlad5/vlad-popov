@@ -15,7 +15,8 @@ import sertificate_11 from "@/images/sertificates/stepik-certificate-3432-aa7cac
 import sertificate_12 from "@/images/sertificates/stepik-certificate-38218-4294eb1.webp";
 import sertificate_13 from "@/images/sertificates/stepik-certificate-4350-a9dce0a.webp";
 import sertificate_14 from "@/images/sertificates/sertificate_next.webp";
-import "./sladerOfSertificate.css";
+import "./sladerOfSertificate.styled.js";
+import { SlideContainer } from "./sladerOfSertificate.styled.js";
 
 export const SliderOfSertificate = () => {
   const images = [
@@ -91,7 +92,7 @@ export const SliderOfSertificate = () => {
     },
   ];
   return (
-    <div className="slideContainer">
+    <SlideContainer>
       <ImageGallery
         autoPlay={true}
         items={images}
@@ -100,6 +101,6 @@ export const SliderOfSertificate = () => {
         originalAlt={images}
         showThumbnails={false}
       />
-    </div>
+    </SlideContainer>
   );
 };
