@@ -1,13 +1,13 @@
 "use client";
-import dynamic from "next/dynamic";
+// import dynamic from "next/dynamic";
 import { AiFillCloseCircle } from "react-icons/ai";
-// import ReactPlayer from "react-player";
+import ReactPlayer from "react-player";
 import { BackDrop, ItemContainer } from "./ModalWindow.styled";
 import { useRouter } from "next/navigation";
 
-const ReactPlayer = dynamic(() => import("react-player"), {
-  ssr: false,
-});
+// const ReactPlayer = dynamic(() => import("react-player"), {
+//   ssr: false,
+// });
 export const ModalWindow = () => {
   const router = useRouter();
   return (
