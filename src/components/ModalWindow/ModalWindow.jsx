@@ -1,20 +1,17 @@
-
+"use client";
+import dynamic from "next/dynamic";
 import { AiFillCloseCircle } from "react-icons/ai";
-import { closeModalWindow } from "@/hooks/ModalWindow";
 // import ReactPlayer from "react-player";
 import { BackDrop, ItemContainer } from "./ModalWindow.styled";
-import video from "@/images/movie/Comp 2.mp4";
+import { useRouter } from "next/navigation";
 
-export const ModalWindow = ({ isPlaying, setPlaying }) => {
-  console.log(video);
-  function closeModal(e) {
-    e.preventDefault();
-    setPlaying(false);
-    closeModalWindow(e);
-  }
-
+const ReactPlayer = dynamic(() => import("react-player"), {
+  ssr: false,
+});
+export const ModalWindow = () => {
+  const router = useRouter();
   return (
-    <BackDrop onClick={(e) => closeModal(e)}>
+    <BackDrop onClick={() => router.push("./")}>
       <ItemContainer onClick={(e) => e.stopPropagation()}>
         <div
           style={{
@@ -25,21 +22,20 @@ export const ModalWindow = ({ isPlaying, setPlaying }) => {
           }}
         >
           <div className="player-wrapper">
-            {/* <ReactPlayer
-              url={video}
-              playing={isPlaying}
+            <ReactPlayer
+              url="/Comp 2.mp4"
+              playing={true}
               controls
+              playsinline
               width="100%"
               height="100%"
-              onPlay={() => setPlaying(true)}
-              onPause={() => setPlaying(false)}
               className="react-player"
-            /> */}
+            />
           </div>
           <AiFillCloseCircle
             style={{ width: "45px" }}
             type="button"
-            onClick={(e) => closeModal(e)}
+            onClick={() => router.push("./")}
             aria-label="Close modal"
           ></AiFillCloseCircle>
         </div>
