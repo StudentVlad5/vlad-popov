@@ -296,9 +296,9 @@ export default function AppCV() {
               When asked why I would like to work at a particular company, I
               sincerely believe that the most important factors for me are the
               relationships within the team and clear work processes, rather
-              than the company's ranking or its industry. With the right
+              than the company&apos;s ranking or its industry. With the right
               mindset, projects can be interesting and exciting in any
-              field: whether it's cryptocurrency, gaming, finance, healthcare,
+              field: whether it&apos;s cryptocurrency, gaming, finance, healthcare,
               e-commerce, and so on. If an employer expects a candidate to
               consider only one company, that would mean the candidate has only
               applied to that one company, which is not the case.
@@ -309,7 +309,7 @@ export default function AppCV() {
               <i>
                 <b>I am open to job offers</b>
               </i>
-              . If you're interested, I would be happy to continue the
+              . If you&apos;re interested, I would be happy to continue the
               conversation through any communication channel.
             </p>
           </div>
