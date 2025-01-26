@@ -68,7 +68,7 @@ export default function AppCV() {
       <aside className="sidebar">
         <div className="linkOfCV">
           <Link
-            href="/Vladyslav_Popov_-_Full_Stack_Web_Developer,_Frontend_Web_Developer.pdf"
+            href="/Vlad_Popov_Resume_Full_Stack_Web_Developer_Frontend_Web_Developer.pdf"
             target="_blank"
             download
           >
