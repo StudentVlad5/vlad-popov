@@ -21,6 +21,7 @@ li {
   font-size: 14px;
   line-height: 24px;
   color: #595959;
+  list-style: none;
 }
 a {
   text-decoration: none;
@@ -87,7 +88,7 @@ a {
   font-weight: 600;
 }
 .linkOfCV > a:hover {
-  color: orangered;
+  color: #ffa500;
   font-weight: 700;
 }
 .sidebar_title {
@@ -119,10 +120,13 @@ a {
   display: block;
 }
 .skills-item {
-  color: #fb6d3a;
+  color: #ffa500;
   animation-name: fadeInOut, moveLeft300px, bounce;
   animation-duration: 3s, 5.5s;
   animation-iteration-count: 1;
+  &-subtext {
+    font-size: 12px;
+  }
 }
 .skills-item-text {
   font-style: normal;
@@ -213,7 +217,6 @@ a {
   line-height: 24px;
   text-align: justify;
   color: #595959;
-  padding: 20px 0;
 }
 .moreDetail {
   display: flex;
@@ -252,7 +255,7 @@ a {
   font-weight: bold;
   font-size: 16px;
   line-height: 20px;
-  color: #fb6d3a;
+  color: #ffa500;
 }
 .job_name {
   font-style: normal;
@@ -312,7 +315,7 @@ a {
   font-weight: bold;
   font-size: 16px;
   line-height: 20px;
-  color: #fb6d3a;
+  color: #ffa500;
 }
 .style_specialty {
   font-style: normal;

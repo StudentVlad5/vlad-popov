@@ -19,28 +19,33 @@ import Image from "next/image";
 import MovieButton from "../MovieButton/MovieButton";
 
 export default function AppCV() {
-  const techSkills = [
-    "Figma",
-    "Next Js",
-    "React",
-    "Node",
-    "JavaScript",
-    "Express",
-    "HTML",
-    "CSS",
-    "Parcel",
-    "GitHub",
-    "MongoDB",
-    "Firebase",
-  ];
   const softSkills = [
     "Communication Skills",
-    "Teamwork",
-    "Hard Working",
-    "Problem Solving",
-    "Project Management Skills",
+    "Leadership & Mentoring",
+    "Adaptability",
+    "Creative Problem Solving",
+    "Conflict Resolution",
     "Agile Software Development",
-    "Business Operations",
+    "Client-Facing Skills",
+    "Time Management",
+  ];
+  const technicalSkills = [
+    { "Version Control": "Git, GitHub, GitLab" },
+    {
+      "Front-End Development":
+        "React, Next.js, JavaScript (ES6+), HTML, CSS, Parcel",
+    },
+    { "Back-End Development": "Node.js, Express.js" },
+    { "API Design & Development": "RESTful APIs, GraphQL" },
+    { "Database Management": "MongoDB, Firebase" },
+    { "UI/UX Design": "Prototyping in Figma, User-Centered Design" },
+    { "Testing Frameworks": "Jest, Testing Library" },
+    { "Cloud Platforms": "Heroku, Firebase" },
+    {
+      "Continuous Integration/Continuous Deployment (CI/CD)":
+        "GitHub Actions, Vercel",
+    },
+    { "Containerization & Orchestration": "Docker" },
   ];
   const details = [
     "Visa sponsorship is not required",
@@ -48,13 +53,13 @@ export default function AppCV() {
     "Zwaag (Hoorn), Netherlands",
   ];
   const moreDetails = {
-    Nationality: "Ukrainian",
-    License: ["B", "C"],
     Languages: {
-      Ukraine: "native",
-      Russian: "native",
-      English: "upper intermediate",
+      Ukraine: "Native",
+      Russian: "Native",
+      English: "Upper Intermediate",
     },
+    Nationality: "Ukrainian",
+    Licenses: ["B", "C"],
   };
   const moreDetailsKeys = Object.keys(moreDetails);
 
@@ -73,22 +78,24 @@ export default function AppCV() {
         </div>
         <div className="photo">
           <div className="itemWrap" data-aos="flip-up" data-aos-delay="150">
-            <div className="imgWrap">
-              <Image
-                className="imgForTeam"
-                src={vlad}
-                alt="vlad"
-                width="auto"
-                height="auto"
-              />
-              <Image
-                className="imgForTeamColor"
-                src={vladColor}
-                alt="vlad"
-                width="auto"
-                height="auto"
-              />
-            </div>
+            <Link href="tel:+31616248358">
+              <div className="imgWrap">
+                <Image
+                  className="imgForTeam"
+                  src={vlad}
+                  alt="vlad"
+                  width="auto"
+                  height="auto"
+                />
+                <Image
+                  className="imgForTeamColor"
+                  src={vladColor}
+                  alt="vlad"
+                  width="auto"
+                  height="auto"
+                />
+              </div>
+            </Link>
             <h4 className="titleItem">Vlad Popov</h4>
             <h5 className="jobItem">Full-Stack Web Developer</h5>
             <h5 className="jobItem">Frontend Web Developer</h5>
@@ -100,17 +107,17 @@ export default function AppCV() {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <div styles={{ position: "relative" }}>
+                  <div style={{ position: "relative" }}>
                     <Image
-                      width="20"
-                      height="20"
+                      width="24"
+                      height="24"
                       src={github.src}
                       alt="github"
                       className="blackIcon"
                     />
                     <Image
-                      width="20"
-                      height="20"
+                      width="24"
+                      height="24"
                       src={github_orange.src}
                       alt="github"
                       className="colorIcon"
@@ -125,17 +132,17 @@ export default function AppCV() {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <div styles={{ position: "relative" }}>
+                  <div style={{ position: "relative" }}>
                     <Image
-                      width="20"
-                      height="20"
+                      width="24"
+                      height="24"
                       src={linkedin.src}
                       alt="linkedin"
                       className="blackIcon"
                     />
                     <Image
-                      width="20"
-                      height="20"
+                      width="24"
+                      height="24"
                       src={linkedin_orange.src}
                       alt="linkedin"
                       className="colorIcon"
@@ -150,17 +157,17 @@ export default function AppCV() {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <div styles={{ position: "relative" }}>
+                  <div style={{ position: "relative" }}>
                     <Image
-                      width="20"
-                      height="20"
+                      width="24"
+                      height="24"
                       src={telegram.src}
                       alt="telegram"
                       className="blackIcon"
                     />
                     <Image
-                      width="20"
-                      height="20"
+                      width="24"
+                      height="24"
                       src={telegram_orange.src}
                       alt="telegram"
                       className="colorIcon"
@@ -170,17 +177,17 @@ export default function AppCV() {
               </li>
               <li className="socialsListItem">
                 <a className="socialsListLink" href="mailto:vlad_np@ukr.net">
-                  <div styles={{ position: "relative" }}>
+                  <div style={{ position: "relative" }}>
                     <Image
-                      width="20"
-                      height="20"
+                      width="24"
+                      height="24"
                       src={envelope.src}
                       alt="envelope"
                       className="blackIcon"
                     />
                     <Image
-                      width="20"
-                      height="20"
+                      width="24"
+                      height="24"
                       src={envelope_orange.src}
                       alt="envelope"
                       className="colorIcon"
@@ -207,10 +214,16 @@ export default function AppCV() {
         <div className="techskills section">
           <h3 className="sidebar_title">Tech Skills</h3>
           <ul className="techskillslist">
-            {techSkills &&
-              techSkills.map((item) => (
-                <li className="skills-item" key={item}>
-                  <span className="skills-item-text">{item}</span>
+            {technicalSkills &&
+              technicalSkills.map((item) => (
+                <li className="skills-item" key={Object.keys(item)}>
+                  <span className="skills-item-text">
+                    {Object.keys(item)}:{" "}
+                  </span>
+                  <br />
+                  <span className="skills-item-subtext">
+                    {Object.values(item)}
+                  </span>
                 </li>
               ))}
           </ul>
@@ -238,79 +251,69 @@ export default function AppCV() {
       <div className="right_side">
         {/* <!--  about_me_section     --> */}
         <div className="aboutme">
-          <h2 className="myjob">Full-Stack Web Developer</h2>
-          <h2 className="myjob">Frontend Web Developer</h2>
+          <h2 className="myjob">
+            Full-Stack Web Developer, Frontend Web Developer
+          </h2>
           <h1 className="myname">Vlad Popov</h1>
           <div className="about_me_description">
             <p>
               I am a{" "}
               <b>
-                <i>highly motivated individual</i>
+                <i>highly motivated and passionate web developer,</i>
               </b>{" "}
-              with a strong passion for web development, and I believe my skills
-              and experience align well with the requirements of my future
-              projects. A few months ago, I relocated to the Netherlands. Since
-              then, I{" "}
-              <b>
-                <i>have obtained work permission</i>
-              </b>
-              , found an apartment, and am now looking for a position where I
-              can fully apply and further develop my skills in the IT field.{" "}
+              recently relocated to the Netherlands. Over the past few months,
+              I’ve successfully navigated the process of obtaining work
+              permission and settling into my new home. Now, I’m eager to embark
+              on the next stage of my career by seeking a position where I can
+              apply my extensive web development skills while continuing to grow
+              professionally.
             </p>
             <p>
               {" "}
-              This challenging period has only strengthened my determination to
-              succeed and make a meaningful contribution in a professional
-              setting. I bring hands-on experience from various projects,
-              including startups and high-responsibility corporate initiatives.
-              Throughout my career, I have consistently delivered projects of
-              varying complexity, always meeting or exceeding expectations. My
-              approach to development is user-focused, ensuring that web
-              applications are not only functional but also intuitive and easy to
-              navigate.
+              My journey has been marked by a dedication to learning and growth.
+              I have hands-on experience in a variety of web development
+              projects, ranging from dynamic startups to high-responsibility
+              corporate initiatives. Throughout my career, I’ve consistently
+              delivered successful projects, always prioritizing user-centered
+              development and delivering solutions that are not only functional
+              but intuitive and easy to use.
             </p>{" "}
             <p>
               {" "}
-              Although my previous experience is based in Ukraine, I am fully
-              prepared and eager{" "}
-              <b>
-                <i> to embrace new challenges </i>
-              </b>{" "}
-              and adapt to different environments. My technical expertise
-              includes{" "}
+              Although my previous experience has been rooted in Ukraine, I am
+              fully prepared and excited to take on new challenges, adapt to
+              different working environments, and bring fresh perspectives to
+              the table. My technical skills include expertise in{" "}
               <b>
                 <i>
                   {" "}
-                  MERN stack, JavaScript, HTML, CSS, React, Next.js, Node.js,
-                  Firebase, MongoDB and Express.
+                  the MERN stack, JavaScript, HTML, CSS, React, Next.js,
+                  Node.js, Firebase, MongoDB, and Express.{" "}
                 </i>
               </b>{" "}
-              I am passionate about staying up-to-date with the latest
-              advancements in programming and am committed to continuous learning
-              and professional growth. My enthusiasm for coding drives me to
-              constantly improve, and I am confident that I can bring this
-              dedication to my new role.{" "}
+              I am passionate about staying on top of the latest industry trends
+              and am committed to continuous learning to ensure that I am at the
+              forefront of technology.{" "}
             </p>
             <p>
               {" "}
-              When asked why I would like to work at a particular company, I
-              sincerely believe that the most important factors for me are the
-              relationships within the team and clear work processes, rather
-              than the company&apos;s ranking or its industry. With the right
-              mindset, projects can be interesting and exciting in any
-              field: whether it&apos;s cryptocurrency, gaming, finance, healthcare,
-              e-commerce, and so on. If an employer expects a candidate to
-              consider only one company, that would mean the candidate has only
-              applied to that one company, which is not the case.
+              What motivates me most about a potential role is not only the job
+              itself but also the relationships within the team and the clarity
+              of work processes. I believe that with the right mindset, any
+              field—be it cryptocurrency, gaming, finance, healthcare, or
+              e-commerce—can be exciting and fulfilling. I am flexible,
+              adaptable, and eager to contribute meaningfully to an organization
+              that values collaboration and innovation.
             </p>
             <p>
               {" "}
               Currently,{" "}
               <i>
-                <b>I am open to job offers</b>
+                <b>I am open to job offers.</b>
               </i>
-              . If you&apos;re interested, I would be happy to continue the
-              conversation through any communication channel.
+              and would love to connect to discuss potential opportunities.
+              Please feel free to reach out to me through any preferred
+              communication channel.
             </p>
           </div>
           {/* <!--more information --> */}
@@ -395,13 +398,18 @@ export default function AppCV() {
 
               <ul className="description-of-duties">
                 <li className="duty_item">
-                  Development of web applications with modern, responsive user
-                  interface, achieving satisfaction rating of 100%
+                  Developed modern, responsive web applications, achieving a
+                  100% customer satisfaction rating.
                 </li>
                 <li className="duty_item">
-                  Collaboration with other developers to ensure code consistency
-                  and best practices. More than 60 completed projects (details
-                  at the Portfolio links)
+                  Collaborated with a team of developers to maintain code
+                  consistency and ensure best practices across over 60 completed
+                  projects.
+                </li>
+                <li className="duty_item">
+                  Hands-on experience in both front-end and back-end development
+                  using technologies such as React, Node.js, Express, MongoDB,
+                  and Firebase.
                 </li>
               </ul>
             </div>
@@ -427,13 +435,17 @@ export default function AppCV() {
               </p>
               <ul className="description-of-duties">
                 <li className="duty_item">
-                  Agile methodology and tools usage to ensure successful product
-                  launch, leading to 25% increase in sales
+                  Led the implementation of payment systems for sellers,
+                  including Visa & MasterCard, Apple & Google Pay, and loans,
+                  leading to a 25% increase in sales.
                 </li>
                 <li className="duty_item">
-                  Implementation of payment methods for sellers on the
-                  marketplace: payment by Visa & MasterCard, Apple & Google pay
-                  and loans
+                  Utilized Agile methodology to drive successful product
+                  launches.
+                </li>
+                <li className="duty_item">
+                  Worked cross-functionally with teams to optimize user
+                  experience and backend integration.
                 </li>
               </ul>
             </div>
@@ -488,12 +500,12 @@ export default function AppCV() {
               </p>
               <ul className="description-of-duties">
                 <li className="duty_item">
-                  Implementation of a complex software project with a budget of
-                  $15 million/year, completing it on time and within budget
+                  Managed a complex software project with an annual budget of
+                  $15 million, ensuring delivery on time and within budget.
                 </li>
                 <li className="duty_item">
-                  Development and implementation of new tools to increase the
-                  company&s sales
+                  Spearheaded the development and implementation of new tools,
+                  contributing significantly to increased sales.
                 </li>
               </ul>
             </div>
@@ -503,49 +515,37 @@ export default function AppCV() {
             <h3 className="main-contact-title">Education</h3>
             {/* <!--  education_1--> */}
             <div className="education1 educate">
-              <h4 className="style_education">
-                Institute of Business Management
-              </h4>
-              <h5 className="style_specialty">
-                {" "}
-                Master of Business Administration (MBA), Finance, Accounting and
-                Audit, Institute of Business Management, Ukraine
-              </h5>
               <p className="style_period">
-                1993 - 1998{" "}
-                <span className="black_color_style_education"> | </span> Ukraine
+                <span className="style_education">
+                  Institute of Business Management{" "}
+                </span>{" "}
+                | Master of Business Administration (MBA), Ukraine (1993 - 1998)
               </p>
             </div>
             {/* <!--  education_2--> */}
             <div className="education2 educate">
-              <h4 className="style_education">ICFM</h4>
-              <h5 className="style_specialty">
-                ICFM. International certificate of the Institute of Certified
-                Financial Managers
-              </h5>
               <p className="style_period">
-                2011 - 2012{" "}
-                <span className="black_color_style_education"> | </span> Ukraine
+                <span className="style_education">
+                  International certificate
+                </span>
+                <span className="black_color_style_education"> | </span>{" "}
+                Institute of Certified Financial Managers (ICFM) (2011 - 2012)
               </p>
             </div>
             {/* <!--  education_3--> */}
             <div className="education3 educate">
-              <h4 className="style_education">GoIT</h4>
-              <h5 className="style_specialty">
-                diploma FS_12607, Full Stack Developer
-              </h5>
               <p className="style_period">
-                2022 - 2023{" "}
-                <span className="black_color_style_education"> | </span> Ukraine
+                <span className="style_education">Full Stack Developer</span>
+                <span className="black_color_style_education"> | </span>{" "}
+                diploma FS_12607 | GoIT, Ukraine (2022 - 2023)
               </p>
             </div>
             {/* <!--  education_4--> */}
             <div className="education4 educate">
-              <h4 className="style_education">Hillel</h4>
-              <h5 className="style_specialty">diploma 61488832, Next JS</h5>
               <p className="style_period">
-                2024 - 2024{" "}
-                <span className="black_color_style_education"> | </span> Ukraine
+                <span className="style_education">Next JS</span>
+                <span className="black_color_style_education"> | </span>{" "}
+                diploma 61488832 | Hillel, Ukraine (2024 - 2024)
               </p>
             </div>
           </div>
