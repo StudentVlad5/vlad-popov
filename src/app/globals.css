@@ -162,13 +162,13 @@ a {
 }
 @media only screen and (min-width: 768px) {
   .right_side {
-    padding: 50px 20px;
+    padding: 20px;
     width: 100%;
   }
 }
 @media only screen and (min-width: 1024px) {
   .right_side {
-    padding: 75px 30px;
+    padding: 35px 30px;
   }
 }
 
@@ -176,6 +176,8 @@ a {
 .my_project {
   padding-bottom: 50px;
   min-width: 350px;
+  border-radius: 20px;
+  overflow: hidden;
 }
 @media only screen and (min-width: 768px) {
   .my_project {
@@ -213,10 +215,13 @@ a {
   font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 24px;
   text-align: justify;
   color: #595959;
+  @media only screen and (min-width: 768px) {
+    font-size: 18px;
+  }
 }
 .moreDetail {
   display: flex;
@@ -243,7 +248,6 @@ a {
 @media only screen and (min-width: 768px) {
   .projectPics {
     width: 100%;
-    /* height: calc(100vh - 300px); */
   }
 }
 /*my work expierences */
@@ -268,13 +272,14 @@ a {
 .style_period {
   font-style: normal;
   font-weight: normal;
-  font-size: 12px;
+  /* font-size: 12px; */
   line-height: 15px;
   color: #a8a8a8;
   margin: 4px 0;
 }
 .job {
   margin: 0 0 15px 0;
+  font-size: 18px;
 }
 .black_color_style_period,
 .black_color_style_education {
@@ -288,12 +293,12 @@ a {
 .duty_item {
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
+  /* font-size: 14px; */
   line-height: 24px;
   color: #595959;
 }
 .text_style_blue {
-  font-size: 12px;
+  /* font-size: 12px; */
   font-style: italic;
   font-weight: 800;
   color: blue;
@@ -303,7 +308,7 @@ a {
 }
 .text_style_about {
   font-style: italic;
-  font-size: 12px;
+  /* font-size: 12px; */
   padding: 0;
   margin: 0;
   line-height: 1;
@@ -313,14 +318,14 @@ a {
   margin: 0 0 10px 0;
   font-style: normal;
   font-weight: bold;
-  font-size: 16px;
+  /* font-size: 16px; */
   line-height: 20px;
   color: #ffa500;
 }
 .style_specialty {
   font-style: normal;
   font-weight: bold;
-  font-size: 14px;
+  /* font-size: 14px; */
   line-height: 17px;
   color: #000000;
   margin: 0 0 10px 0;

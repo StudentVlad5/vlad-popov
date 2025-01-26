@@ -50,7 +50,7 @@ export default function AppCV() {
   const details = [
     "Visa sponsorship is not required",
     "Residence permit",
-    "Zwaag (Hoorn), Netherlands",
+    "Zwaag (Hoorn), The Netherlands",
   ];
   const moreDetails = {
     Languages: {
@@ -300,8 +300,8 @@ export default function AppCV() {
               What motivates me most about a potential role is not only the job
               itself but also the relationships within the team and the clarity
               of work processes. I believe that with the right mindset, any
-              field—be it cryptocurrency, gaming, finance, healthcare, or
-              e-commerce—can be exciting and fulfilling. I am flexible,
+              field: be it cryptocurrency, gaming, finance, healthcare, or
+              e-commerce, can be exciting and fulfilling. I am flexible,
               adaptable, and eager to contribute meaningfully to an organization
               that values collaboration and innovation.
             </p>
