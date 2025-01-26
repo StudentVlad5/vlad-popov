@@ -173,7 +173,12 @@ a {
 }
 
 /*about me section*/
+.slideContainer {
+  border-radius: 20px;
+  overflow: hidden;
+}
 .my_project {
+  margin: 20px 0;
   padding-bottom: 50px;
   min-width: 350px;
   border-radius: 20px;

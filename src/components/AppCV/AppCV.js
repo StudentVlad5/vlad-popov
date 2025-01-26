@@ -367,7 +367,9 @@ export default function AppCV() {
           {/* <!--  my projects     --> */}
           <div className="my_project" style={{ position: "relative" }}>
             <h3 className="main-contact-title">Projects</h3>
-            <Project />
+            <div className="slideContainer">
+              <Project />
+            </div>
           </div>
           {/* <!--  my work expierences     --> */}
           <div className="workexpiriens">
@@ -536,16 +538,16 @@ export default function AppCV() {
             <div className="education3 educate">
               <p className="style_period">
                 <span className="style_education">Full Stack Developer</span>
-                <span className="black_color_style_education"> | </span>{" "}
-                diploma FS_12607 | GoIT, Ukraine (2022 - 2023)
+                <span className="black_color_style_education"> | </span> diploma
+                FS_12607 | GoIT, Ukraine (2022 - 2023)
               </p>
             </div>
             {/* <!--  education_4--> */}
             <div className="education4 educate">
               <p className="style_period">
                 <span className="style_education">Next JS</span>
-                <span className="black_color_style_education"> | </span>{" "}
-                diploma 61488832 | Hillel, Ukraine (2024 - 2024)
+                <span className="black_color_style_education"> | </span> diploma
+                61488832 | Hillel, Ukraine (2024 - 2024)
               </p>
             </div>
           </div>
