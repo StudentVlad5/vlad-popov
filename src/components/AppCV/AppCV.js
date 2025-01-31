@@ -309,7 +309,7 @@ export default function AppCV() {
               {" "}
               Currently,{" "}
               <i>
-                <b>I am open to job offers.</b>
+                <b>I am open to job offers</b>
               </i>
               and would love to connect to discuss potential opportunities.
               Please feel free to reach out to me through any preferred
