@@ -550,6 +550,14 @@ export default function AppCV() {
                 61488832 | Hillel, Ukraine (2024 - 2024)
               </p>
             </div>
+            {/* <!--  education_5--> */}
+            <div className="education4 educate">
+              <p className="style_period">
+                <span className="style_education">Master's degree, Computer Science</span>
+                <span className="black_color_style_education"> | </span> 
+                Neoversity. IT University, Ukraine (2025 - 2027)
+              </p>
+            </div>
           </div>
         </div>
       </div>
