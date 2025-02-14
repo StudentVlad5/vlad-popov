@@ -553,7 +553,7 @@ export default function AppCV() {
             {/* <!--  education_5--> */}
             <div className="education4 educate">
               <p className="style_period">
-                <span className="style_education">Master's degree, Computer Science</span>
+                <span className="style_education">Master&apos;s degree, Computer Science</span>
                 <span className="black_color_style_education"> | </span> 
                 Neoversity. IT University, Ukraine (2025 - 2027)
               </p>
