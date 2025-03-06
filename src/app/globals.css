@@ -84,7 +84,7 @@ a {
   gap: 20px;
 }
 .linkOfCV > a {
-  color: grey;
+  color: rgb(240, 238, 238);
   font-weight: 600;
 }
 .linkOfCV > a:hover {
@@ -134,7 +134,7 @@ a {
   font-size: 16px;
   line-height: 24px;
   color: #fff;
-  opacity: 0.75;
+  opacity: 0.9;
   @media only screen and (min-width: 768px) {
     font-size: 18px;
   }
@@ -233,7 +233,7 @@ a {
   flex-direction: column;
   @media only screen and (min-width: 768px) {
     flex-direction: row;
-    justify-content: space-around;
+    /* justify-content: space-around; */
   }
 }
 /*my projects section*/
@@ -279,7 +279,7 @@ a {
   font-weight: normal;
   /* font-size: 12px; */
   line-height: 15px;
-  color: #a8a8a8;
+  color: #3d2955;
   margin: 4px 0;
 }
 .job {

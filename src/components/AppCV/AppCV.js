@@ -58,8 +58,8 @@ export default function AppCV() {
       Russian: "Native",
       English: "Upper Intermediate",
     },
-    Nationality: "Ukrainian",
-    Licenses: ["B", "C"],
+    // Nationality: "Ukrainian",
+    // Licenses: ["B", "C"],
   };
   const moreDetailsKeys = Object.keys(moreDetails);
 
@@ -259,26 +259,16 @@ export default function AppCV() {
             <p>
               I am a{" "}
               <b>
-                <i>highly motivated and passionate web developer,</i>
+                <i>passionate and highly motivated web developer,</i>
               </b>{" "}
-              recently relocated to the Netherlands. Over the past few months,
-              I’ve successfully navigated the process of obtaining work
-              permission and settling into my new home. Now, I’m eager to embark
-              on the next stage of my career by seeking a position where I can
-              apply my extensive web development skills while continuing to grow
-              professionally.
+              recently relocated to the Netherlands, eager to bring my expertise to a dynamic team. With a strong background in the 
+              <b><i> MERN stack (MongoDB, Express, React, Node.js)</i></b>, I have developed scalable and user-friendly web applications, integrating technologies like <b><i>Next.js, TypeScript, Firebase, PostgreSQL, GraphQL, and REST APIs...</i></b>
             </p>
             <p>
               {" "}
-              My journey has been marked by a dedication to learning and growth.
-              I have hands-on experience in a variety of web development
-              projects, ranging from dynamic startups to high-responsibility
-              corporate initiatives. Throughout my career, I’ve consistently
-              delivered successful projects, always prioritizing user-centered
-              development and delivering solutions that are not only functional
-              but intuitive and easy to use.
+              Over the years, I’ve worked on diverse projects, from fast-paced startups to large-scale enterprise applications, delivering high-performance solutions with a focus on clean architecture, responsive design, and optimal UX/UI. My experience also includes state management (Redux, Zustand), authentication (OAuth, JWT), and cloud services (AWS, Vercel, Netlify).
             </p>{" "}
-            <p>
+            {/* <p>
               {" "}
               Although my previous experience has been rooted in Ukraine, I am
               fully prepared and excited to take on new challenges, adapt to
@@ -294,16 +284,10 @@ export default function AppCV() {
               I am passionate about staying on top of the latest industry trends
               and am committed to continuous learning to ensure that I am at the
               forefront of technology.{" "}
-            </p>
+            </p> */}
             <p>
               {" "}
-              What motivates me most about a potential role is not only the job
-              itself but also the relationships within the team and the clarity
-              of work processes. I believe that with the right mindset, any
-              field: be it cryptocurrency, gaming, finance, healthcare, or
-              e-commerce, can be exciting and fulfilling. I am flexible,
-              adaptable, and eager to contribute meaningfully to an organization
-              that values collaboration and innovation.
+              I thrive in collaborative environments where innovation, efficiency, and teamwork drive success. Open to exciting opportunities in <b><i>fintech, healthcare, gaming, e-commerce, or blockchain</i></b>, I’m ready to contribute and grow within a forward-thinking organization. Let’s connect!
             </p>
             <p>
               {" "}
@@ -323,7 +307,7 @@ export default function AppCV() {
                 if (typeof moreDetails[item] === "string") {
                   return (
                     <div key={item}>
-                      <h4 className="style_education">{item}</h4>
+                      <h3 className="main-contact-title">{item}</h3>
                       <p className="style_period">
                         <span className="black_color_style_education">
                           {moreDetails[item]}
@@ -334,7 +318,7 @@ export default function AppCV() {
                 } else if (Array.isArray(moreDetails[item])) {
                   return (
                     <div key={item}>
-                      <h4 className="style_education">{item}</h4>
+                      <h3 className="main-contact-title">{item}</h3>
                       <p className="style_period">
                         {moreDetails[item].map((it) => (
                           <span
@@ -351,7 +335,7 @@ export default function AppCV() {
                   let keyItem = Object.keys(moreDetails[item]);
                   return (
                     <div key={item}>
-                      <h4 className="style_education">{item}</h4>
+                      <h3 className="main-contact-title">{item}</h3>
                       {keyItem.map((it) => (
                         <p className="style_period" key={it}>
                           <span className="black_color_style_education">
@@ -386,7 +370,6 @@ export default function AppCV() {
               </p>
               <p className="style_period">
                 2022 - up to now{" "}
-                <span className="black_color_style_period"> | </span> Ukraine
               </p>
               <p className="text_style_blue">
                 <Link
@@ -424,7 +407,6 @@ export default function AppCV() {
               <p className="text_style_about"> online marketplace</p>
               <p className="style_period">
                 2018 - up to now{" "}
-                <span className="black_color_style_period"> | </span> Ukraine
               </p>
               <p className="text_style_blue">
                 <Link
@@ -463,7 +445,6 @@ export default function AppCV() {
               </p>
               <p className="style_period">
                 2017 - 2018{" "}
-                <span className="black_color_style_period"> | </span> Ukraine
               </p>
               <ul className="description-of-duties">
                 <li className="duty_item">
@@ -489,7 +470,6 @@ export default function AppCV() {
               <p className="style_period">
                 {" "}
                 2004 - 2017{" "}
-                <span className="black_color_style_period"> | </span> Ukraine
               </p>
               <p className="text_style_blue">
                 <Link
@@ -516,22 +496,21 @@ export default function AppCV() {
           <div className="education">
             <h3 className="main-contact-title">Education</h3>
             {/* <!--  education_1--> */}
-            <div className="education1 educate">
+            <div className="education4 educate">
               <p className="style_period">
                 <span className="style_education">
-                  Institute of Business Management{" "}
-                </span>{" "}
-                | Master of Business Administration (MBA), Ukraine (1993 - 1998)
+                  Master&apos;s degree, Computer Science
+                </span>
+                <span className="black_color_style_education"> | </span>
+                Neoversity | Woolf, IT University, 2025 - 2027
               </p>
             </div>
             {/* <!--  education_2--> */}
-            <div className="education2 educate">
+            <div className="education4 educate">
               <p className="style_period">
-                <span className="style_education">
-                  International certificate
-                </span>
-                <span className="black_color_style_education"> | </span>{" "}
-                Institute of Certified Financial Managers (ICFM) (2011 - 2012)
+                <span className="style_education">Next JS</span>
+                <span className="black_color_style_education"> | </span> diploma
+                61488832 | Hillel, 2024
               </p>
             </div>
             {/* <!--  education_3--> */}
@@ -539,23 +518,26 @@ export default function AppCV() {
               <p className="style_period">
                 <span className="style_education">Full Stack Developer</span>
                 <span className="black_color_style_education"> | </span> diploma
-                FS_12607 | GoIT, Ukraine (2022 - 2023)
+                FS_12607 | GoIT, 2022 - 2023
               </p>
             </div>
             {/* <!--  education_4--> */}
-            <div className="education4 educate">
+            <div className="education2 educate">
               <p className="style_period">
-                <span className="style_education">Next JS</span>
-                <span className="black_color_style_education"> | </span> diploma
-                61488832 | Hillel, Ukraine (2024 - 2024)
+                <span className="style_education">
+                  International certificate
+                </span>
+                <span className="black_color_style_education"> | </span>{" "}
+                Institute of Certified Financial Managers (ICFM), 2011 - 2012
               </p>
             </div>
             {/* <!--  education_5--> */}
-            <div className="education4 educate">
+            <div className="education1 educate">
               <p className="style_period">
-                <span className="style_education">Master&apos;s degree, Computer Science</span>
-                <span className="black_color_style_education"> | </span> 
-                Neoversity | Woolf, IT University, Malta - Ukraine (2025 - 2027)
+                <span className="style_education">
+                  East European University named after Rauf Ablyazov{" "}
+                </span>{" "}
+                | specialist, Business Accounting and Audit, 1993 - 1998
               </p>
             </div>
           </div>
