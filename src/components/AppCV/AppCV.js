@@ -300,54 +300,7 @@ export default function AppCV() {
               communication channel.
             </p>
           </div>
-          {/* <!--more information --> */}
-          <div className="moreDetail">
-            {moreDetailsKeys &&
-              moreDetailsKeys.map((item) => {
-                if (typeof moreDetails[item] === "string") {
-                  return (
-                    <div key={item}>
-                      <h3 className="main-contact-title">{item}</h3>
-                      <p className="style_period">
-                        <span className="black_color_style_education">
-                          {moreDetails[item]}
-                        </span>
-                      </p>
-                    </div>
-                  );
-                } else if (Array.isArray(moreDetails[item])) {
-                  return (
-                    <div key={item}>
-                      <h3 className="main-contact-title">{item}</h3>
-                      <p className="style_period">
-                        {moreDetails[item].map((it) => (
-                          <span
-                            key={it}
-                            className="black_color_style_education"
-                          >
-                            {it + " "}
-                          </span>
-                        ))}
-                      </p>
-                    </div>
-                  );
-                } else {
-                  let keyItem = Object.keys(moreDetails[item]);
-                  return (
-                    <div key={item}>
-                      <h3 className="main-contact-title">{item}</h3>
-                      {keyItem.map((it) => (
-                        <p className="style_period" key={it}>
-                          <span className="black_color_style_education">
-                            {it + ": " + moreDetails[item][it]}
-                          </span>
-                        </p>
-                      ))}
-                    </div>
-                  );
-                }
-              })}
-          </div>
+
           {/* <!--  my projects     --> */}
           <div className="my_project" style={{ position: "relative" }}>
             <h3 className="main-contact-title">Projects</h3>
@@ -540,6 +493,54 @@ export default function AppCV() {
                 | specialist, Business Accounting and Audit, 1993 - 1998
               </p>
             </div>
+          </div>
+                    {/* <!--more information --> */}
+          <div className="moreDetail">
+            {moreDetailsKeys &&
+              moreDetailsKeys.map((item) => {
+                if (typeof moreDetails[item] === "string") {
+                  return (
+                    <div key={item}>
+                      <h3 className="main-contact-title">{item}</h3>
+                      <p className="style_period">
+                        <span className="black_color_style_education">
+                          {moreDetails[item]}
+                        </span>
+                      </p>
+                    </div>
+                  );
+                } else if (Array.isArray(moreDetails[item])) {
+                  return (
+                    <div key={item}>
+                      <h3 className="main-contact-title">{item}</h3>
+                      <p className="style_period">
+                        {moreDetails[item].map((it) => (
+                          <span
+                            key={it}
+                            className="black_color_style_education"
+                          >
+                            {it + " "}
+                          </span>
+                        ))}
+                      </p>
+                    </div>
+                  );
+                } else {
+                  let keyItem = Object.keys(moreDetails[item]);
+                  return (
+                    <div key={item}>
+                      <h3 className="main-contact-title">{item}</h3>
+                      {keyItem.map((it) => (
+                        <p className="style_period" key={it}>
+                          <span className="black_color_style_education">
+                            {it + ": " + moreDetails[item][it]}
+                          </span>
+                        </p>
+                      ))}
+                    </div>
+                  );
+                }
+              })}
           </div>
         </div>
       </div>
