@@ -63,7 +63,12 @@ export const Project = () => {
           .focus();
         break;
       case "quillis project":
-        window.open("https://quillis.shop/", "_blank").focus();
+        window
+          .open(
+            "https://store-of-stylish-clothes-git-main-studentvlad5s-projects.vercel.app/",
+            "_blank"
+          )
+          .focus();
         break;
       default:
         break;
