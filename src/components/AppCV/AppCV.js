@@ -257,47 +257,21 @@ export default function AppCV() {
           <h1 className="myname">Vlad Popov</h1>
           <div className="about_me_description">
             <p>
-              I am a{" "}
-              <b>
-                <i>passionate and highly motivated web developer,</i>
-              </b>{" "}
-              recently relocated to the Netherlands, eager to bring my expertise to a dynamic team. With a strong background in the 
-              <b><i> MERN stack (MongoDB, Express, React, Node.js)</i></b>, I have developed scalable and user-friendly web applications, integrating technologies like <b><i>Next.js, TypeScript, Firebase, PostgreSQL, GraphQL, and REST APIs...</i></b>
+              Due to the ongoing war in Ukraine, I had to leave behind all my savings and start rebuilding my life from scratch. At the moment, I am working two jobs — full-time as a Project Manager in compliance and part-time as a web developer. Although the compliance role offers higher compensation, my true passion lies in software development and building meaningful tech products.
             </p>
             <p>
               {" "}
-              Over the years, I’ve worked on diverse projects, from fast-paced startups to large-scale enterprise applications, delivering high-performance solutions with a focus on clean architecture, responsive design, and optimal UX/UI. My experience also includes state management (Redux, Zustand), authentication (OAuth, JWT), and cloud services (AWS, Vercel, Netlify).
+              This challenging journey has only deepened my motivation to fully transition into the IT industry. I am currently seeking a full-time developer position that will allow me to focus on one role, continue my professional growth, and further enhance my technical skills. I`m ready to take on a probation period, complete test tasks, and do whatever it takes to prove my commitment and expertise — as long as the compensation allows for a sustainable standard of living.
             </p>{" "}
-            {/* <p>
-              {" "}
-              Although my previous experience has been rooted in Ukraine, I am
-              fully prepared and excited to take on new challenges, adapt to
-              different working environments, and bring fresh perspectives to
-              the table. My technical skills include expertise in{" "}
-              <b>
-                <i>
-                  {" "}
-                  the MERN stack, JavaScript, HTML, CSS, React, Next.js,
-                  Node.js, Firebase, MongoDB, and Express.{" "}
-                </i>
-              </b>{" "}
-              I am passionate about staying on top of the latest industry trends
-              and am committed to continuous learning to ensure that I am at the
-              forefront of technology.{" "}
-            </p> */}
             <p>
               {" "}
-              I thrive in collaborative environments where innovation, efficiency, and teamwork drive success. Open to exciting opportunities in <b><i>fintech, healthcare, gaming, e-commerce, or blockchain</i></b>, I’m ready to contribute and grow within a forward-thinking organization. Let’s connect!
+              Over the years, I’ve worked on diverse projects, from fast-paced startups to large-scale enterprise applications, delivering high-performance solutions with a focus on clean architecture, responsive design, and optimal UX/UI. My experience includes working with the MERN stack (MongoDB, Express, React, Node.js) as well as Next.js, TypeScript, Firebase, PostgreSQL, GraphQL, and REST APIs. I’m also confident with state management tools (Redux, Zustand), authentication methods (OAuth, JWT), and cloud platforms (AWS, Vercel, Netlify).
             </p>
             <p>
-              {" "}
-              Currently,{" "}
-              <i>
-                <b>I am open to job offers </b>
-              </i>
-              and would love to connect to discuss potential opportunities.
-              Please feel free to reach out to me through any preferred
-              communication channel.
+              I thrive in collaborative environments where innovation, efficiency, and teamwork drive success. I’m especially interested in opportunities within fintech, healthcare, gaming, e-commerce, or blockchain sectors, and I’m excited to bring value to a forward-thinking team.
+            </p>
+            <p>
+              Thank you for reviewing my profile. I’m especially grateful to those who are open to giving me a chance to move one step closer to my dream of working full-time in tech. Please feel free to reach out — I’d be happy to connect and discuss any potential opportunities.
             </p>
           </div>
 
@@ -488,7 +462,7 @@ export default function AppCV() {
             <div className="education1 educate">
               <p className="style_period">
                 <span className="style_education">
-                  East European University named after Rauf Ablyazov{" "}
+                  East European University named after Rauf Ablyazov&nbsp;
                 </span>{" "}
                 | specialist, Business Accounting and Audit, 1993 - 1998
               </p>
