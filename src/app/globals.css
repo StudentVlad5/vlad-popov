@@ -227,8 +227,26 @@ a {
   @media only screen and (min-width: 768px) {
     font-size: 18px;
   }
+  p {
+    text-indent: 2em; /* Відступ на початку абзацу */
+    font-size: 105%; /* (опціонально) Збільшує розмір першої літери */
+  }
+
+  p::first-letter {
+    text-transform: uppercase; /* Робить першу літеру великою */
+    font-size: 110%; /* (опціонально) Збільшує розмір першої літери */
+    font-weight: bold; /* (опціонально) Робить її жирною */
+  }
+  > ul > li {
+    font-size: 20px;
+    list-style-type: circle;
+  }
 }
+
 .moreDetail {
+  .about_me_description > p {
+    text-indent: 20px;
+  }
   display: flex;
   flex-direction: column;
   @media only screen and (min-width: 768px) {

@@ -257,21 +257,66 @@ export default function AppCV() {
           <h1 className="myname">Vlad Popov</h1>
           <div className="about_me_description">
             <p>
-              Due to the ongoing war in Ukraine, I had to leave behind all my savings and start rebuilding my life from scratch. At the moment, I am working two jobs — full-time as a Project Manager in compliance and part-time as a web developer. Although the compliance role offers higher compensation, my true passion lies in software development and building meaningful tech products.
+              In the past few years, my life has changed a lot. Due to the war
+              in Ukraine, I had to leave behind everything I had — including my
+              savings — and start from zero in a new country.
             </p>
             <p>
               {" "}
-              This challenging journey has only deepened my motivation to fully transition into the IT industry. I am currently seeking a full-time developer position that will allow me to focus on one role, continue my professional growth, and further enhance my technical skills. I`m ready to take on a probation period, complete test tasks, and do whatever it takes to prove my commitment and expertise — as long as the compensation allows for a sustainable standard of living.
+              Right now, I’m working two jobs to support myself. My full-time
+              role is in compliance, which gives me a stable income. But my real
+              passion is software development, which I currently do part-time as
+              a web developer. I truly enjoy building tech products and solving
+              real problems with code.
             </p>{" "}
             <p>
               {" "}
-              Over the years, I’ve worked on diverse projects, from fast-paced startups to large-scale enterprise applications, delivering high-performance solutions with a focus on clean architecture, responsive design, and optimal UX/UI. My experience includes working with the MERN stack (MongoDB, Express, React, Node.js) as well as Next.js, TypeScript, Firebase, PostgreSQL, GraphQL, and REST APIs. I’m also confident with state management tools (Redux, Zustand), authentication methods (OAuth, JWT), and cloud platforms (AWS, Vercel, Netlify).
+              I’m also studying <b>Computer Science at Woolf</b>, a European
+              university, and I’m constantly improving my English. Every day, I
+              work hard to grow as a developer and prepare for a full-time role
+              in the IT industry.
             </p>
             <p>
-              I thrive in collaborative environments where innovation, efficiency, and teamwork drive success. I’m especially interested in opportunities within fintech, healthcare, gaming, e-commerce, or blockchain sectors, and I’m excited to bring value to a forward-thinking team.
+              I’m now looking for a full-time software development position
+              where I can fully focus on one role, continue learning, and
+              contribute to a great team. I’m open to a probation period or test
+              tasks — I’m ready to prove my skills and dedication, as long as
+              the compensation supports a basic standard of living.
             </p>
             <p>
-              Thank you for reviewing my profile. I’m especially grateful to those who are open to giving me a chance to move one step closer to my dream of working full-time in tech. Please feel free to reach out — I’d be happy to connect and discuss any potential opportunities.
+              Over the years, I’ve worked on many projects — from early-stage
+              startups to large-scale enterprise applications. I focus on clean
+              code, good architecture, and great user experience. My main tech
+              stack includes:
+            </p>
+            <ul>
+              <li>
+                <b>Frontend:</b> React, Next.js, TypeScript, Redux, Zustand
+              </li>
+              <li>
+                <b>Backend:</b> Node.js, Express, GraphQL, REST APIs
+              </li>
+              <li>
+                <b>Databases:</b> MongoDB, PostgreSQL, Firebase
+              </li>
+              <li>
+                <b>Cloud & Deployment:</b> AWS, Vercel, Netlify
+              </li>
+              <li>
+                <b>Auth:</b> JWT, OAuth
+              </li>
+            </ul>
+            <p>
+              I enjoy working in teams that value collaboration, learning, and
+              building products that make a difference. I’m especially
+              interested in areas like{" "}
+              <b>fintech, healthcare, gaming, e-commerce, or blockchain.</b>
+            </p>
+            <p>
+              Thanks for reading my story. I’m truly grateful to anyone willing
+              to give me a chance to grow and contribute as a full-time
+              developer. Feel free to reach out — I’d love to connect and talk
+              about opportunities.
             </p>
           </div>
 
@@ -295,9 +340,7 @@ export default function AppCV() {
                 {" "}
                 IT company for website design and development
               </p>
-              <p className="style_period">
-                2022 - up to now{" "}
-              </p>
+              <p className="style_period">2022 - up to now </p>
               <p className="text_style_blue">
                 <Link
                   href="https://brand-maze.com/"
@@ -332,9 +375,7 @@ export default function AppCV() {
                 <span className="text_style_orange">at RozetkaUa LTD</span>
               </h4>
               <p className="text_style_about"> online marketplace</p>
-              <p className="style_period">
-                2018 - up to now{" "}
-              </p>
+              <p className="style_period">2018 - up to now </p>
               <p className="text_style_blue">
                 <Link
                   href="https://rozetka.com.ua/ua/"
@@ -370,9 +411,7 @@ export default function AppCV() {
                 {" "}
                 production of boats and polyester products
               </p>
-              <p className="style_period">
-                2017 - 2018{" "}
-              </p>
+              <p className="style_period">2017 - 2018 </p>
               <ul className="description-of-duties">
                 <li className="duty_item">
                   Team of sales representatives leading to exceed sales targets
@@ -394,10 +433,7 @@ export default function AppCV() {
                 {" "}
                 retail network of sales of electronics and household appliances
               </p>
-              <p className="style_period">
-                {" "}
-                2004 - 2017{" "}
-              </p>
+              <p className="style_period"> 2004 - 2017 </p>
               <p className="text_style_blue">
                 <Link
                   href="https://www.foxtrot.com.ua/"
@@ -468,7 +504,7 @@ export default function AppCV() {
               </p>
             </div>
           </div>
-                    {/* <!--more information --> */}
+          {/* <!--more information --> */}
           <div className="moreDetail">
             {moreDetailsKeys &&
               moreDetailsKeys.map((item) => {
