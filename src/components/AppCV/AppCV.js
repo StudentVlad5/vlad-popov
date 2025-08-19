@@ -20,7 +20,8 @@ import { Project } from "@/components/Projects/Projects";
 import Image from "next/image";
 import MovieButton from "@/components/MovieButton/MovieButton";
 import AboutMe from "@/components/AboutMe/about_me";
-import WorkExperience from "@/components/Expierence/Expierence";
+import WorkExperience from "../Expierence/Expierence";
+
 
 export default function AppCV() {
   const softSkills = [
