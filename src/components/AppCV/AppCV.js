@@ -18,9 +18,9 @@ import student_ticket_backside from "@/images/person_photo/student_ticket_backsi
 
 import { Project } from "@/components/Projects/Projects";
 import Image from "next/image";
-import MovieButton from "../MovieButton/MovieButton";
-import AboutMe from "../AboutMe/about_me";
-import WorkExperience from "../Expierence/Expierence";
+import MovieButton from "@/components/MovieButton/MovieButton";
+import AboutMe from "@/components/AboutMe/about_me";
+import WorkExperience from "@/components/Expierence/Expierence";
 
 export default function AppCV() {
   const softSkills = [
