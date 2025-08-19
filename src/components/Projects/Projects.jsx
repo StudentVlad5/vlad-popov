@@ -17,6 +17,15 @@ import Brandmaze_img from "@/images/projects/brand-maze.webp";
 import Finance_club_img from "@/images/projects/finance_club.webp";
 import Homeforest_img from "@/images/projects/homeforest.webp";
 import Quillis_img from "@/images/projects/quillis.webp";
+import AddaxCrm_img from "@/images/projects/addax-crm.webp";
+import EnglishExcellence_img from "@/images/projects/english-excellence.webp";
+import GuideManGlobal_img from "@/images/projects/guide-man-global.webp";
+import LootNinjaTest_img from "@/images/projects/loot-ninja-test.webp";
+import OTHON_img from "@/images/projects/OTHON.webp";
+import Picsio_img from "@/images/projects/picsio.webp";
+import Reenbit_img from "@/images/projects/reenbit-trainee-camp.webp";
+import Remwaste_img from "@/images/projects/remwaste-full-stack-developer.webp";
+import UIchalleng_img from "@/images/projects/ui-ux-challeng.webp";
 import Image from "next/image";
 
 export const Project = () => {
@@ -68,6 +77,46 @@ export const Project = () => {
             "https://store-of-stylish-clothes-git-main-studentvlad5s-projects.vercel.app/",
             "_blank"
           )
+          .focus();
+        break;
+      case "addaxCrm project":
+        window.open("https://addax-crm.vercel.app/", "_blank").focus();
+        break;
+      case "englishExcellence project":
+        window
+          .open("https://studentvlad5.github.io/english-excellence/", "_blank")
+          .focus();
+        break;
+      case "guideManGlobal project":
+        window.open("https://ggs.com.ua/en", "_blank").focus();
+        break;
+      case "lootNinjaTest project":
+        window
+          .open("https://loot-ninja-test.vercel.app/orders", "_blank")
+          .focus();
+        break;
+      case "OTHON project":
+        window.open("https://othon-self.vercel.app/", "_blank").focus();
+        break;
+      case "picsio project":
+        window.open("https://pics-io.vercel.app/", "_blank").focus();
+        break;
+      case "reenbit project":
+        window
+          .open("https://reenbit-trainee-camp.vercel.app/", "_blank")
+          .focus();
+        break;
+      case "remwaste project":
+        window
+          .open(
+            "https://remwaste-full-stack-developer.vercel.app/select_skip",
+            "_blank"
+          )
+          .focus();
+        break;
+      case "uIchalleng project":
+        window
+          .open("https://ui-ux-challenge.vercel.app/widgets", "_blank")
           .focus();
         break;
       default:
@@ -137,7 +186,6 @@ export const Project = () => {
             onClick={hendleClickProject}
           />
         </SwiperSlide>
-
         <SwiperSlide>
           <Image
             className="projectPics"
@@ -175,6 +223,78 @@ export const Project = () => {
             className="projectPics"
             src={Quillis_img}
             alt="quillis project"
+            onClick={hendleClickProject}
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Image
+            className="projectPics"
+            src={AddaxCrm_img}
+            alt="addaxCrm project"
+            onClick={hendleClickProject}
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Image
+            className="projectPics"
+            src={EnglishExcellence_img}
+            alt="englishExcellence project"
+            onClick={hendleClickProject}
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Image
+            className="projectPics"
+            src={GuideManGlobal_img}
+            alt="guideManGlobal project"
+            onClick={hendleClickProject}
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Image
+            className="projectPics"
+            src={LootNinjaTest_img}
+            alt="lootNinjaTest project"
+            onClick={hendleClickProject}
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Image
+            className="projectPics"
+            src={OTHON_img}
+            alt="OTHON project"
+            onClick={hendleClickProject}
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Image
+            className="projectPics"
+            src={Picsio_img}
+            alt="picsio project"
+            onClick={hendleClickProject}
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Image
+            className="projectPics"
+            src={Reenbit_img}
+            alt="reenbit project"
+            onClick={hendleClickProject}
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Image
+            className="projectPics"
+            src={Remwaste_img}
+            alt="remwaste project"
+            onClick={hendleClickProject}
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Image
+            className="projectPics"
+            src={UIchalleng_img}
+            alt="uIchalleng project"
             onClick={hendleClickProject}
           />
         </SwiperSlide>

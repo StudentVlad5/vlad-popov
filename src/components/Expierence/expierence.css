@@ -1,0 +1,64 @@
+.work-experience-container {
+  max-width: 900px;
+  margin: 0 auto;
+  color: #333;
+}
+
+.section-divider {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 40px 0 20px 0;
+}
+
+.main-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.job-entry {
+  margin-bottom: 40px;
+}
+
+.job-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.company-name {
+  color: #ffa500;
+}
+
+.job-description {
+  font-style: italic;
+  margin: 4px 0;
+}
+
+.job-period {
+  font-weight: 500;
+  color: #555;
+  margin-bottom: 4px;
+}
+
+.job-link a {
+  color: #0056d2;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.job-link a:hover {
+  text-decoration: underline;
+}
+
+.job-duties {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.job-duties li {
+  margin-bottom: 8px;
+  line-height: 1.6;
+}

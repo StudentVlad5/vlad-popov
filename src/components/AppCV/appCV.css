@@ -153,3 +153,20 @@
     /* fill: ${(props) => props.theme.accentRed}; */
   }
 }
+
+.student-ticket-img {
+  border-radius: 10px;
+}
+.myname-details {
+  display: flex;
+  gap: 8px;
+  flex-direction: column;
+}
+.myname-details li {
+  font-size: 20px;
+  list-style: circle;
+}
+.myname-details-text {
+  font-size: 16px;
+  letter-spacing: -0.4px;
+}
