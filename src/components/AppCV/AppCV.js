@@ -22,7 +22,6 @@ import MovieButton from "@/components/MovieButton/MovieButton";
 import AboutMe from "@/components/AboutMe/about_me";
 import WorkExperience from "../WorkExperience/WorkExperience";
 
-
 export default function AppCV() {
   const softSkills = [
     "Communication Skills",
@@ -323,8 +322,9 @@ export default function AppCV() {
               </span>
             </li>
             <li>
-              <b>Registered</b> as a <b>Private Entrepreneur</b> (FOP) in
-              Ukraine.
+              <strong>
+                Registered as a Private Entrepreneur (FOP) in Ukraine.
+              </strong>
               <br />
               <span className="myname-details-text">
                 Willing to register as a{" "}
