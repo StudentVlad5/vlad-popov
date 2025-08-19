@@ -20,7 +20,7 @@ import { Project } from "@/components/Projects/Projects";
 import Image from "next/image";
 import MovieButton from "@/components/MovieButton/MovieButton";
 import AboutMe from "@/components/AboutMe/about_me";
-import WorkExperience from "../Expierence/Expierence";
+import WorkExperience from "../WorkExperience/WorkExperience";
 
 
 export default function AppCV() {
