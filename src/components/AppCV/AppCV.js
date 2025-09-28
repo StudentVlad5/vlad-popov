@@ -128,7 +128,7 @@ export default function AppCV() {
               <li className="socialsListItem">
                 <a
                   className="socialsListLink"
-                  href="https://www.linkedin.com/in/vladyslav-popov-a491232a/"
+                  href="https://www.linkedin.com/in/vlad-popov-a491232a/"
                   target="_blank"
                   rel="noreferrer"
                 >
