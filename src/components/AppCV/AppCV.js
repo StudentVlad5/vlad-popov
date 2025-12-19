@@ -67,11 +67,7 @@ export default function AppCV() {
     <div className="maincontainer">
       <aside className="sidebar">
         <div className="linkOfCV">
-          <Link
-            href="/Vlad_Popov_Resume_Full_Stack_Web_Developer_Frontend_Web_Developer.pdf"
-            target="_blank"
-            download
-          >
+          <Link href="/Vlad_Popov_Resume.pdf" target="_blank" download>
             Download CV
           </Link>
           <MovieButton />

@@ -10,41 +10,6 @@ const WorkExperience = () => {
       {/* Company 1 */}
       <div className="job-entry">
         <h4 className="job-title">
-          Full-Stack Web Developer{" "}
-          <span className="company-name">at Brand MAZE</span>
-        </h4>
-        <p className="job-description">
-          IT company specializing in web design and development
-        </p>
-        <p className="job-period">2022 – Present</p>
-        <p className="job-link">
-          <a
-            href="https://brand-maze-agency.vercel.app/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            brand-maze-agency.vercel.app
-          </a>
-        </p>
-        <ul className="job-duties">
-          <li>
-            Developed modern, responsive web applications with a 100% client
-            satisfaction rate.
-          </li>
-          <li>
-            Worked on 120+ projects ensuring code quality, performance, and
-            UI/UX best practices.
-          </li>
-          <li>
-            Hands-on development across the stack using React, Node.js, MongoDB,
-            Firebase, and more.
-          </li>
-        </ul>
-      </div>
-
-      {/* Company 2 */}
-      <div className="job-entry">
-        <h4 className="job-title">
           Project Manager <span className="company-name">at RozetkaUa LTD</span>
         </h4>
         <p className="job-description">Leading Ukrainian online marketplace</p>
@@ -69,6 +34,41 @@ const WorkExperience = () => {
           <li>
             Collaborated across teams to enhance both backend workflows and
             frontend UX.
+          </li>
+        </ul>
+      </div>
+
+      {/* Company 2 */}
+      <div className="job-entry">
+        <h4 className="job-title">
+          Full-Stack Web Developer{" "}
+          <span className="company-name">at Brand MAZE</span>
+        </h4>
+        <p className="job-description">
+          IT company specializing in web design and development
+        </p>
+        <p className="job-period">2022 – 2025</p>
+        <p className="job-link">
+          <a
+            href="https://brand-maze-agency.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            brand-maze-agency.vercel.app
+          </a>
+        </p>
+        <ul className="job-duties">
+          <li>
+            Developed modern, responsive web applications with a 100% client
+            satisfaction rate.
+          </li>
+          <li>
+            Worked on 120+ projects ensuring code quality, performance, and
+            UI/UX best practices.
+          </li>
+          <li>
+            Hands-on development across the stack using React, Node.js, MongoDB,
+            Firebase, and more.
           </li>
         </ul>
       </div>
