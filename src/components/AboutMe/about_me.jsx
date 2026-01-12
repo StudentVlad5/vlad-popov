@@ -18,8 +18,7 @@ const AboutMe = () => {
             <strong> Woolf University</strong>.
           </li>
           <li>
-            Currently employed full-time in compliance and part-time as a web
-            developer, I’m now seeking a
+            I’m now seeking a{" "}
             <strong> full-time software engineering position</strong> where I
             can dedicate my full focus, grow professionally, and contribute to a
             mission-driven team.

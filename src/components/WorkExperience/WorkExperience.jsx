@@ -47,7 +47,7 @@ const WorkExperience = () => {
         <p className="job-description">
           IT company specializing in web design and development
         </p>
-        <p className="job-period">2022 – 2025</p>
+        <p className="job-period">2022 – 2026</p>
         <p className="job-link">
           <a
             href="https://brand-maze-agency.vercel.app/"
