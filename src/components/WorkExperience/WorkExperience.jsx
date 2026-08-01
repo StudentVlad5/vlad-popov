@@ -43,7 +43,7 @@ const WorkExperience = () => {
           Project Manager <span className="company-name">at RozetkaUa LTD</span>
         </h4>
         <p className="job-description">Leading Ukrainian online marketplace</p>
-        <p className="job-period">2018 – 2024</p>
+        <p className="job-period">2018 – 2026</p>
         <p className="job-link">
           <a
             href="https://rozetka.com.ua/ua/"
