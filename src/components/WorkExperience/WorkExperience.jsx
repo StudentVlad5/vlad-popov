@@ -10,10 +10,40 @@ const WorkExperience = () => {
       {/* Company 1 */}
       <div className="job-entry">
         <h4 className="job-title">
+          Production Operator <span className="company-name">at Gaia B.V.</span>
+        </h4>
+        <p className="job-description">Textile company in the Netherland</p>
+        <p className="job-period">2026 (7 months contract)</p>
+        <p className="job-link">
+          <a
+            href="https://www.telefoonboek.nl/bedrijven/t3029407/hem/gaia-b.v./"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            gaia-b.v.
+          </a>
+        </p>
+        <ul className="job-duties">
+          <li>
+            Sorted and registered garments based on type, condition, and
+            processing requirements.
+          </li>
+          <li>
+            Performed gravity-based packaging operations in accordance with
+            company procedures.
+          </li>
+          <li>Operated industrial sewing equipment.</li>
+          <li>Prepared, organized, and packed items for warehouse shipment.</li>
+        </ul>
+      </div>
+
+      {/* Company 2 */}
+      <div className="job-entry">
+        <h4 className="job-title">
           Project Manager <span className="company-name">at RozetkaUa LTD</span>
         </h4>
         <p className="job-description">Leading Ukrainian online marketplace</p>
-        <p className="job-period">2018 – Present</p>
+        <p className="job-period">2018 – 2024</p>
         <p className="job-link">
           <a
             href="https://rozetka.com.ua/ua/"
@@ -38,7 +68,7 @@ const WorkExperience = () => {
         </ul>
       </div>
 
-      {/* Company 2 */}
+      {/* Company 3 */}
       <div className="job-entry">
         <h4 className="job-title">
           Full-Stack Web Developer{" "}
