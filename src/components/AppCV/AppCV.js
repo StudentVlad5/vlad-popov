@@ -56,7 +56,8 @@ export default function AppCV() {
     Languages: {
       Ukraine: "Native",
       Russian: "Native",
-      English: "Upper Intermediate",
+      English: "Advanced",
+      Dutch: "Beginner",
     },
     // Nationality: "Ukrainian",
     // Licenses: ["B", "C"],

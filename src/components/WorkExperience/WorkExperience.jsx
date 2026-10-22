@@ -25,15 +25,20 @@ const WorkExperience = () => {
         </p>
         <ul className="job-duties">
           <li>
-            Sorted and registered garments based on type, condition, and
-            processing requirements.
+            Architected and deployed an internal web dashboard using React,
+            Node.js, and PostgreSQL to track daily operational throughput and
+            analyze real-time performance metrics.
           </li>
           <li>
-            Performed gravity-based packaging operations in accordance with
-            company procedures.
+            Coordinated cross-functional order fulfillment processes with plant
+            leadership, successfully reducing operational delays and eliminating
+            workflow bottlenecks.
           </li>
-          <li>Operated industrial sewing equipment.</li>
-          <li>Prepared, organized, and packed items for warehouse shipment.</li>
+          <li>
+            Managed high-volume automated sorting and packaging operations
+            handling up to 10 tons per day using gravity-based systems, ensuring
+            full compliance and efficient warehouse dispatch handling.
+          </li>
         </ul>
       </div>
 
